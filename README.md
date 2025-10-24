@@ -9,7 +9,9 @@
 <div align="center">
 <a href="https://www.java.com/ja/">
 <img src="https://github.com/user-attachments/assets/27456443-673b-4c0e-8b85-a55796f52a7a" height="100">
-</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</a>
+<br>
+<br>
 <a href="https://spring.io/projects/spring-boot">
 <img src="https://spring.io/img/spring-2.svg" height="70">
 </a>
@@ -17,7 +19,9 @@
 <br>
 <a href="https://gradle.org">
 <img src="https://gradle.com/wp-content/themes/fuel/assets/img/branding/gradle-elephant-icon-gradient.svg" height="80">
-</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</a>
+<br>
+<br>
 <a href="https://mapstruct.org">
 <img src="https://mapstruct.org/images/mapstruct.png"  height="70">
 </a>
