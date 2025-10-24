@@ -3,6 +3,7 @@
 {
   "name": "Ubuntu",
   "image": "mcr.microsoft.com/devcontainers/base:noble",
+  "runArgs": ["--name", "mapstruct-code-example"],
 
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
@@ -12,9 +13,6 @@
       "gradleVersion": "9.1.0"
     }
   },
-
-  // Use 'postCreateCommand' to run commands after the container is created.
-  // "postCreateCommand": "uname -a",
 
   "customizations": {
     "vscode": {
