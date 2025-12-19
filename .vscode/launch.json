@@ -18,7 +18,12 @@
       "id": "process",
       "type": "pickString",
       "description": "何をするか選んでね！",
-      "options": [{ "label": "ホゲホゲ", "value": "hoge" }]
+      "options": [
+        { "label": "キホン", "value": "basic" },
+        { "label": "オウヨウ1", "value": "differentFieldNames" },
+        { "label": "オウヨウ2", "value": "partialMapping" },
+        { "label": "オウヨウ3", "value": "nestedObjectMapping" }
+      ]
     }
   ]
 }

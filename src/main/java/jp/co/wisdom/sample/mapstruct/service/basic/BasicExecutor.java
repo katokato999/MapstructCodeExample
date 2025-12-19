@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import jp.co.wisdom.sample.mapstruct.service.CodeSampleService;
 import lombok.RequiredArgsConstructor;
 
-@Service("hoge")
+@Service("basic")
 @RequiredArgsConstructor
 public class BasicExecutor implements CodeSampleService {
 
@@ -13,7 +13,7 @@ public class BasicExecutor implements CodeSampleService {
 
     @Override
     public void execute() {
-        var result = mapper.toResponse(new BackendResponse("田中太郎", 100));
-        System.out.println("name:" + result.userName() + ", age:" + result.age());
+        var result = mapper.toDto(new BasicBackendResponse("田中太郎", 100));
+        System.out.println("name:" + result.name() + ", age:" + result.age());
     }
 }
