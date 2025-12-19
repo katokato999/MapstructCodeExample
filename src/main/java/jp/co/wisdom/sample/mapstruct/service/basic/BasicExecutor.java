@@ -13,7 +13,7 @@ public class BasicExecutor implements CodeSampleService {
 
     @Override
     public void execute() {
-        var result = mapper.toDestination(new UserEntity("hoge", 100));
-        System.out.println("name:" + result.userName() + ", value:" + result.value());
+        var result = mapper.toResponse(new BackendResponse("田中太郎", 100));
+        System.out.println("name:" + result.userName() + ", age:" + result.age());
     }
 }

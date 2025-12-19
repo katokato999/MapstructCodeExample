@@ -1,6 +1,5 @@
 package jp.co.wisdom.sample.mapstruct.service.basic;
 
-import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
@@ -9,7 +8,6 @@ import org.mapstruct.Mapping;
 public interface BasicMapper {
 
     /** サンプルメソッド */
-    @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "userName", source = "name")
-    UserDto toDestination(UserEntity source);
+    UserDto toResponse(BackendResponse response);
 }
