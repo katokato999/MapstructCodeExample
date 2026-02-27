@@ -22,7 +22,8 @@
         { "label": "キホン", "value": "basic" },
         { "label": "オウヨウ1", "value": "differentFieldNames" },
         { "label": "オウヨウ2", "value": "partialMapping" },
-        { "label": "オウヨウ3", "value": "nestedObjectMapping" }
+        { "label": "オウヨウ3", "value": "nestedObjectMapping" },
+        { "label": "オウヨウ4", "value": "valueConversionMapping" }
       ]
     }
   ]
