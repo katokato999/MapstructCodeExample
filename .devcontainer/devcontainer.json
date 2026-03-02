@@ -1,0 +1,65 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+  "name": "Ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/base:noble",
+  "runArgs": ["--name", "mapstruct-code-example"],
+
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "installGradle": true,
+      "version": "25",
+      "jdkDistro": "amzn",
+      "gradleVersion": "9.1.0"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "vmware.vscode-boot-dev-pack",
+        "richardwillis.vscode-spotless-gradle"
+      ],
+      "settings": {
+        "[java]": {
+          "spotlessGradle.format.enable": true,
+          "editor.defaultFormatter": "richardwillis.vscode-spotless-gradle",
+          "editor.codeActionsOnSave": {
+            "source.fixAll.spotlessGradle": "always"
+          }
+        },
+        "java.compile.nullAnalysis.mode": "automatic",
+        "java.configuration.updateBuildConfiguration": "automatic",
+
+        "editor.insertSpaces": false,
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.detectIndentation": false,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": "always",
+          "source.fixAll.eslint": "always"
+        },
+        "workbench.colorCustomizations": {
+          "activityBar.activeBackground": "#87d9e5",
+          "activityBar.background": "#87d9e5",
+          "activityBar.foreground": "#15202b",
+          "activityBarBadge.background": "#ffb0f4",
+          "activityBarBadge.foreground": "#15202b",
+          "commandCenter.border": "#15202b99",
+          "sash.hoverBorder": "#87d9e5",
+          "statusBar.background": "#5dccdc",
+          "statusBar.foreground": "#15202b",
+          "statusBarItem.hoverBackground": "#33bfd3",
+          "statusBarItem.remoteBackground": "#5dccdc",
+          "statusBarItem.remoteForeground": "#15202b",
+          "titleBar.activeBackground": "#5dccdc",
+          "titleBar.activeForeground": "#15202b",
+          "titleBar.inactiveBackground": "#5dccdc99",
+          "titleBar.inactiveForeground": "#15202b99"
+        }
+      }
+    }
+  }
+}
