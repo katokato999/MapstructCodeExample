@@ -3,11 +3,11 @@ package jp.co.wisdom.sample.mapstruct.service.nestedObjectMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-/** マッパーサンプルのサンプル */
+/** ネストしたオブジェクトをマッピングするサンプル */
 @Mapper
 public interface NestedObjectMappingMapper {
 
-    /** サンプルメソッド */
+    /** ネストしたオブジェクトをマッピングするサンプルメソッド */
     @Mapping(target = "userName", source = "userInfo.name")
     @Mapping(target = "userAge", source = "userInfo.age")
     NestedObjectMappingDto toDto(NestedObjectMappingBackendResponse response);

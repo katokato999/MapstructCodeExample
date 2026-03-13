@@ -25,7 +25,8 @@
         { "label": "オウヨウ3", "value": "nestedObjectMapping" },
         { "label": "オウヨウ4", "value": "valueConversionMapping" },
         { "label": "オウヨウ5", "value": "manualMapping" },
-        { "label": "オウヨウ6", "value": "listMapping" }
+        { "label": "オウヨウ6", "value": "listMapping" },
+        { "label": "オウヨウ7", "value": "conditionMapping" }
       ]
     }
   ]

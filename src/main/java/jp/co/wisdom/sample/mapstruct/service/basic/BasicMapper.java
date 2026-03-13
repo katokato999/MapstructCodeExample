@@ -2,10 +2,10 @@ package jp.co.wisdom.sample.mapstruct.service.basic;
 
 import org.mapstruct.Mapper;
 
-/** マッパーサンプルのサンプル */
+/** 基本的なフィールドマッピングのサンプル */
 @Mapper
 public interface BasicMapper {
 
-    /** サンプルメソッド */
+    /** 基本的なフィールドマッピングのサンプルメソッド */
     BasicDto toDto(BasicBackendResponse response);
 }

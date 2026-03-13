@@ -5,11 +5,11 @@ import java.util.List;
 import org.mapstruct.IterableMapping;
 import org.mapstruct.Mapper;
 
-/** マッパーサンプルのサンプル */
+/** リストのマッピングのサンプル */
 @Mapper
 public interface ListMappingMapper {
 
-    /** サンプルメソッド */
+    /** リストのマッピングサンプルメソッド */
     @IterableMapping(numberFormat = "000")
     List<String> toZeroPadding(List<Integer> numbers);
 }

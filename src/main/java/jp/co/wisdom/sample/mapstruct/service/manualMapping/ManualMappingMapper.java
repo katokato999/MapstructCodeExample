@@ -2,11 +2,11 @@ package jp.co.wisdom.sample.mapstruct.service.manualMapping;
 
 import org.mapstruct.Mapper;
 
-/** マッパーサンプルのサンプル */
+/** 自動マッピングができない場合のサンプル */
 @Mapper
 public interface ManualMappingMapper {
 
-    /** サンプルメソッド */
+    /** 自動マッピングができない場合のサンプルメソッド */
     default ManualMappingDto toDto(ManualMappingBackendResponse response) {
         String name = response.firstName() + response.lastName();
         Status status;
