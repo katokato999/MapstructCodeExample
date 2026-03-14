@@ -7,7 +7,7 @@ import org.mapstruct.Mapping;
 @Mapper(imports = DateUtil.class)
 public interface ValueConversionMapper {
 
-    /** 変換処理を挟む場合のサンプルメソッド */
+    /** 一部だけマッピングしたい場合のサンプルメソッド */
     @Mapping(target = "date", expression = "java(DateUtil.parse(response.strDate()))")
     ValueConversionDto toDto(ValueConversionBackendResponse response);
 }
