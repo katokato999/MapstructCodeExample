@@ -4,11 +4,11 @@ import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-/** マッパーサンプルのサンプル */
+/** 一部だけマッピングしたい場合のサンプル */
 @Mapper
 public interface PartialMappingMapper {
 
-    /** サンプルメソッド */
+    /** 一部だけマッピングしたい場合のサンプルメソッド */
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "userName", source = "name")
     @Mapping(target = "userAge", source = "age")
